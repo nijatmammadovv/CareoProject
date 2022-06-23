@@ -1,0 +1,132 @@
+nav{
+    background-image: url(https://www.free-css.com/assets/files/free-css-templates/preview/page278/careo/assets/images/header_bg.jpg);
+}
+
+.navbar-nav img{    
+    width: 152px;
+    height: 60px;
+}
+
+.navbar-nav .active{
+    color:red;
+}
+
+.navbar-nav .nav-link{
+    font-weight: 700;
+    color: black;
+}
+
+.navbar-nav .nav-link:hover{
+    color: red;
+}
+
+.caruosel{
+    position: relative;
+}
+
+.imagegirl{
+    width: 40%;
+    height: 40vh;
+    margin-left: 1000px;
+}
+.btn{
+    background-color: white;
+}
+
+.head{
+    padding:100px 0;
+}
+
+.d-flex{
+    text-align: center;
+    justify-content: center;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.card:hover{
+    background-color: rgba(255, 0, 0, 0.671);
+    color: white;
+}
+.button{
+justify-content: center;
+text-align: center;
+}
+.button .btn{
+    background-color: black;
+    color: white;
+}
+
+.button .btn:hover{
+    background-color: brown;
+}
+
+.backgroundimage{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  width: 100%;
+  height: 75vh;
+}
+
+.section3 p{
+    width: 60%;
+}
+
+.section3text{
+    padding: 200px 30px;
+}
+
+.section3text .btn{
+    background-color: black;
+    color: white;
+}
+
+.section4{
+    padding: 100px 0;
+}
+
+.section3img img{
+width: 500px !important;
+height: 400px;
+justify-content: center;
+}
+
+.contactimage{
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+.form-group input{
+    width: 350px;
+    height: 40px;
+}
+
+.carousel-caption span{
+    color: red;
+}
+
+.imagecircle{
+    margin-left: 650px;
+    padding: 200px 0;
+}
+
+.carousel-caption{
+    margin-top: 100px;
+}
+
+.button1 a:hover{
+    background-color: black;
+    color: white;
+}
+
+.contact{
+    padding: 100px 0;
+}

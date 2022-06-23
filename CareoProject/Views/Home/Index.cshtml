@@ -1,0 +1,206 @@
+﻿@model List<Customer>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="caruoselimage">
+                <img src="~/assets/images/banner.jpg" class=" w-100" alt="...">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <div class="container ">
+                    <div class="imagegirl">
+                        <img src="~/assets/images/girl.png" class=" w-100" alt="...">
+                    </div>
+                    <h2>WELCOME TO</h2>
+                    <h1>LABSPA</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in<br> some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
+                    <div class="d-flex gap-5">
+                        <a class="btn" href="">READ MORE</a>
+                        <a class="btn" href="">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="caruoselimage">
+                <img src="~/assets/images/banner.jpg" class=" w-100" alt="">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                    <div class="imagegirl">
+                        <img src="~/assets/images/girl.png" class="w-100" alt="...">
+                    </div>
+                    <div style="padding: 20px 40px;">
+                        <h2>WELCOME TO</h2>
+                        <h1>LABSPA</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in<br> some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
+                        <div class="d-flex  gap-5">
+                            <a class="btn" href="">READ MORE</a>
+                            <a class="btn" href="">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="caruoselimage">
+                <img src="~/assets/images/banner.jpg" class=" w-100" alt="">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+                <div class="container">
+                    <div class="imagegirl">
+                        <img src="~/assets/images/girl.png" class="w-100" alt="...">
+                    </div>
+                    <div style="padding: 20px 40px;">
+                        <h2>WELCOME TO</h2>
+                        <h1>LABSPA</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in<br> some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
+                        <div class="d-flex  gap-5">
+                            <a class="btn" href="">READ MORE</a>
+                            <a class="btn" href="">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<section class="head">
+    <div class="d-flex">
+        <img src="~/assets/images/head (1).png" alt="">
+        <h1>Our Services</h1>
+    </div>
+    <div class="card-group">
+        <div class="container d-flex py-4 gap-4">
+            <div class="card g">
+                <div>
+                    <img src="~/assets/images/thr.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">COSMETIC</h5>
+                    <p class="card-text">some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
+                </div>
+            </div>
+            <div class="card ">
+                <div>
+                    <img src="~/assets/images/thr1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">NAILS</h5>
+                    <p class="card-text">some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="~/assets/images/thr2.png" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">HAIRDRESSING</h5>
+                    <p class="card-text">some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <a class="btn" href="">READ MORE</a>
+    </div>
+</section>
+<section class="section3">
+    <div class="backgroundimage" style="background-image: url(assets/images/about_bg.jpg);">
+        <div class="container section3text">
+            <div class="d-flex" style="padding:30px 50px">
+                <img src="~/assets/images/head.h.png" alt="">
+                <h1 style="color: white;">About Our Labspa</h1>
+            </div>
+            <p style="color: white;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
+            <a class="btn" href="">READ MORE</a>
+        </div>
+    </div>
+
+</section>
+<section class="section4">
+    <div class="d-flex">
+        <img src="~/assets/images/head (2).png" alt="">
+        <h1>Our Customer Feedback</h1>
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            @foreach (var item in Model)
+            {
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="imagecircle">
+                        <img src="~/assets/images/@item.Image" alt="...">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>@item.Fullname</h5>
+                        <span>@item.SpecialtyName</span>
+                        <p>@item.Description</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<section class="contact">
+    <div class="contactimage" style="background-image: url(assets/images/contact.jpg);">
+        <div class="d-flex py-5">
+            <img src="~/assets/images/head.h.png" alt="">
+            <h1> Request <span style="color: white;">A call Back</span></h1>
+        </div>
+        <div class="d-flex gap-5 " style="justify-content: center;">
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput"></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2"></label>
+                        <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2"></label>
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                    </div>
+                </form>
+                <div style="padding: 10px;">
+                    <a class="btn " href="" style="background-color: black;color: white;">SEND</a>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24319.80818457579!2d49.81804225!3d40.365056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1saz!2s!4v1655974278986!5m2!1saz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
