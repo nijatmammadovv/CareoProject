@@ -68,6 +68,8 @@ namespace CareoProject.Areas.Manage.Controllers
         {
             Customer customer = _context.Customers.Find(id);
             if (customer == null) return BadRequest();
+            if (System.IO.File.Exists(Path.Combine(_env.WebRootPath, "assets", "images", customer.Image)))
+                System.IO.File.Delete(Path.Combine(_env.WebRootPath, "assets", "images", customer.Image));
             _context.Customers.Remove(customer);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -86,8 +88,37 @@ namespace CareoProject.Areas.Manage.Controllers
             customer1.SpecialtyName = customer.SpecialtyName;
             customer1.Fullname = customer.Fullname;
             customer1.Description = customer.Description;
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            customer1.ImageUrl = customer.ImageUrl;
+            if (customer.ImageUrl != null)
+            {
+                if (customer.ImageUrl.ContentType != "image/jpeg" && customer.ImageUrl.ContentType != "image/png" && customer.ImageUrl.ContentType != "image/wepb")
+                {
+                    ModelState.AddModelError("", "Faylin tipi png ve ya jpeg olmalidir");
+                    return View(customer);
+                }
+                if (customer.ImageUrl.Length / 1024 > 3000)
+                {
+                    ModelState.AddModelError("", "Faylin olcusu max 3mb ola biler");
+                    return View(customer);
+                }
+                string filename = customer.ImageUrl.FileName;
+                if (filename.Length > 64)
+                {
+                    filename.Substring(filename.Length - 64, 64);
+
+                }
+                if (System.IO.File.Exists(Path.Combine(_env.WebRootPath, "assets", "images", customer1.Image)))
+                    System.IO.File.Delete(Path.Combine(_env.WebRootPath, "assets", "images", customer1.Image));
+                string newFileName = Guid.NewGuid().ToString() + filename;
+                string path = Path.Combine(_env.WebRootPath, "assets", "images", newFileName);
+                using (FileStream fs = new FileStream(path, FileMode.Create))
+                {
+                    customer.ImageUrl.CopyTo(fs);
+                }
+                customer1.Image = newFileName;
+            }
+                _context.SaveChanges();
+              return RedirectToAction(nameof(Index));
         }
     }
 }
